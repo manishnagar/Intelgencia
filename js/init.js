@@ -8,7 +8,7 @@ $(document).ready(function(){
         items: 2
       },
       600: {
-        items: 3
+        items: 1
       },
       1000: {
         items: 1
@@ -25,10 +25,12 @@ $(document).ready(function(){
   $('#customNextBtn').click(function() {
     $(".owl-carousel").trigger('next.owl.carousel');
   });
+
+  
 });
 
 
-
+// first section slider
 
     $(".slider-heading-carousel").owlCarousel({
       items: 1, // Show one heading at a time
@@ -39,3 +41,8 @@ $(document).ready(function(){
       nav: false, // Hide next/prev buttons (optional)
     });
 
+// quick enquiry toggle
+$('.toggle').click(function(){
+  $('.sidebar-contact').toggleClass('active')
+  $('.toggle').toggleClass('active')
+})
